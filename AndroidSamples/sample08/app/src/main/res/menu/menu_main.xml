@@ -1,0 +1,29 @@
+<?xml version ="1.0" encoding ="utf-8"?><!--  Learn More about how to use App Actions: https://developer.android.com/guide/actions/index.html -->
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:andorid="http://schemas.android.com/apk/res/android">
+
+    <!--ActionBar-->
+    <item
+        andorid:id="@+id/menu_search"
+        andorid:icon="@android:drawable/ic_menu_search"
+        andorid:title="검색"
+        app:showAsAction="always|withText"/>
+
+    <item
+        andorid:id="@+id/menu_chat"
+        andorid:icon="@android:drawable/sym_action_chat"
+        andorid:title="채팅"
+        app:showAsAction="always"/>
+
+    <item
+        andorid:id="@+id/menu_email"
+        andorid:icon="@android:drawable/sym_action_email"
+        andorid:title="이메일"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        andorid:id="@+id/action_setting"
+        andorid:title="세팅"
+        app:showAsAction="never"/>
+
+</menu>

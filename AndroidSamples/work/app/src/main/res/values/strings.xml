@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">work</string>
+    <string name="edit_hint">숫자 입력</string>
+</resources>

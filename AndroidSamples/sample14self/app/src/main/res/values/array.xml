@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="city">
+        <item>도시선택</item>
+        <item>정선</item>
+        <item>강릉</item>
+        <item>충주</item>
+        <item>전북</item>
+    </string-array>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="406dp"
+            android:layout_height="169dp"
+            android:text="Hello World!"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.731"
+    />
+    <TextView
+            android:text="위도"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="64dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="76dp"/>
+    <TextView
+            android:text="경도"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="76dp"/>
+    <EditText
+            android:layout_width="368dp"
+            android:layout_height="39dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/latText"
+            app:layout_constraintStart_toEndOf="@+id/textView4" app:layout_constraintTop_toTopOf="@+id/textView4"
+            android:layout_marginStart="52dp"/>
+    <EditText
+            android:layout_width="368dp"
+            android:layout_height="39dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/lonText"
+            app:layout_constraintTop_toTopOf="@+id/textView2" app:layout_constraintStart_toEndOf="@+id/textView2"
+            android:layout_marginStart="52dp"/>
+    <EditText
+            android:layout_width="368dp"
+            android:layout_height="39dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/addrText"
+            app:layout_constraintTop_toTopOf="@+id/textView3" app:layout_constraintStart_toEndOf="@+id/textView3"
+            android:layout_marginStart="52dp"/>
+    <TextView
+            android:text="주소"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            android:layout_marginTop="128dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="76dp"/>
+    <Button
+            android:text="주소로 변경"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/addrBtn"
+            app:layout_constraintTop_toBottomOf="@+id/lonText"
+            android:layout_marginTop="20dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="256dp"/>
+    <Button
+            android:text="지도"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/mapBtn1"
+            app:layout_constraintTop_toTopOf="@+id/addrBtn" app:layout_constraintStart_toEndOf="@+id/addrBtn"
+            android:layout_marginStart="48dp"/>
+    <Button
+            android:text="지도"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/mapBtn2"
+            app:layout_constraintTop_toTopOf="@+id/latBtn" app:layout_constraintStart_toEndOf="@+id/latBtn"
+            android:layout_marginStart="44dp"/>
+    <Button
+            android:text="위도/경도로 변경"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/latBtn"
+            app:layout_constraintTop_toBottomOf="@+id/addrText"
+            android:layout_marginTop="40dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="212dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

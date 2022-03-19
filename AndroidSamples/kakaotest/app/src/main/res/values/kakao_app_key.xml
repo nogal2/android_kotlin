@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kakao_app_key">갈프로젝트</string>
+    <string name="kakao_native_key">40a6b474c23bb397f004d50617be3bea</string>
+</resources>
